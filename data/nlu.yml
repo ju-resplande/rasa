@@ -69,12 +69,12 @@ nlu:
 
   - intent: order_pizza
     examples: |
-      - Gostaria de uma pizza de {pizza_flavor}
-      - Queria pizza de {pizza_flavor}
-      - Quero pizza de {pizza_flavor}
-      - Gostaria de uma pizza de {pizza_flavor} e {drink}
-      - Queria pizza de {pizza_flavor} e {drink}
-      - Quero pizza de {pizza_flavor} e {drink}
+      - Gostaria de uma pizza [portuguesa](pizza_flavor)
+      - Queria pizza de [de lombo suíno](pizza_flavor)
+      - Quero pizza de [peperoni](pizza_flavor)
+      - Gostaria de uma pizza [quatro-queijos](pizza_flavor) e uma [coca-cola](drink)
+      - Queria pizza de [quatro queijos](pizza_flavor) e um [guaraná](drink)
+      - Quero pizza de [frango com catupiri](pizza_flavor) e um [suco de laranja](drink)
 
   - intent: ask_pizza_flavors
     examples: |
