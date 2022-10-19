@@ -1,13 +1,33 @@
 version: "3.1"
 
 rules:
+  - rule: List order and ask  anytime the user greet
+    steps:
+      - intent: greet
+      - action: list_order
+      - action: ask_order
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - rule: List menu when the user asks menu
+    steps:
+      - intent: ask_menu
+      - action: list_menu
+
+  - rule: List pizza flavors when the user ask pizza flavors
+    steps:
+      - intent: ask_pizza_flavors
+      - action: list_pizza_flavors
+
+  - rule: List drinks when the user ask drinks
+    steps:
+      - intent: ask_drinks
+      - action: list_drinks
+
+  - rule: Show total after the user order pizza
+    steps:
+      - intent: order_pizza
+      - action: show_total

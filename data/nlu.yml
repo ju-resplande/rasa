@@ -1,91 +1,88 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - ola
+      - olá
+      - oi
+      - bom dia
+      - boa tarde
+      - boa noite
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - até
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: thank
+    examples: |
+      - obrigada
+      - obrigado
+      - agradeço
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: affirm
+    examples: |
+      - sim
+      - ss
+      - s
+      - isso mesmo
+      - correto
+      - certinho
+      - ok
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: deny
+    examples: |
+      - não
+      - no
+      - n
+      - nn
+      - incorreto
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: mood_great
+    examples: |
+      - gostei muito
+      - tudo certo
+      - joia
+      - amei
+      - gostei
+      - adorei
+      - muito bom
+      - bom
+      - excelente
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: mood_unhappy
+    examples: |
+      - não gostei
+      - achei ruim
+      - ruim
+      - mais ou menos
+      - bem mais ou menos
+
+  - intent: ask_menu
+    examples: |
+      - Gostaria de fazer um pedido
+      - Queria pedir algo
+      - Quero pedir
+      - O que vocês tem?
+      - Qual é o cardápio?
+
+  - intent: order_pizza
+    examples: |
+      - Gostaria de uma pizza de {pizza_flavor}
+      - Queria pizza de {pizza_flavor}
+      - Quero pizza de {pizza_flavor}
+      - Gostaria de uma pizza de {pizza_flavor} e {drink}
+      - Queria pizza de {pizza_flavor} e {drink}
+      - Quero pizza de {pizza_flavor} e {drink}
+
+  - intent: ask_pizza_flavors
+    examples: |
+      - Quais sabores de pizza vocês têm?
+      - Quais tipos de pizza vocês têm?
+      - Quais os tipos de pizza disponíveis?
+
+  - intent: ask_drinks
+    examples: |
+      - Quais bebidas vocês têm?
+      - Quais bebidas vocês têm disponíveis?
