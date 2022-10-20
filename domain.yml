@@ -13,6 +13,22 @@ intents:
   - ask_pizza_flavors
   - ask_drinks
 
+entities:
+  - pizza_flavor
+  - drink
+
+slots:
+  pizza_flavor:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: pizza_flavor
+  drink:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: drink
+
 responses:
   utter_greet:
     - text: "Olá"

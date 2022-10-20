@@ -86,3 +86,10 @@ nlu:
     examples: |
       - Quais bebidas vocês têm?
       - Quais bebidas vocês têm disponíveis?
+
+  - lookup: drink
+    examples: |
+      - coca-cola
+      - guaraná
+      - guaraná jesus
+      - pepsi

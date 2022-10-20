@@ -8,3 +8,35 @@ stories:
       - action: ask_order
       - intent: order_pizza
       - action: show_total
+
+  - story: happy path 2
+    steps:
+      - intent: ask_pizza_flavors
+      - action: list_pizza_flavors
+      - intent: order_pizza
+      - action: show_total
+
+  - story: happy path 3
+    steps:
+      - intent: ask_pizza_flavors
+      - action: list_pizza_flavors
+      - intent: order_pizza
+      - action: show_total
+
+  - story: happy path 4
+    steps:
+      - intent: ask_pizza_flavors
+      - action: list_pizza_flavors
+      - intent: ask_drinks
+      - action: list_drinks
+      - intent: order_pizza
+      - action: show_total
+
+  - story: happy path 5
+    steps:
+      - intent: ask_drinks
+      - action: list_drinks
+      - intent: ask_pizza_flavors
+      - action: list_pizza_flavors
+      - intent: order_pizza
+      - action: show_total
