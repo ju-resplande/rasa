@@ -56,7 +56,7 @@ class ActionShowTotal(Action):
 
         total = 0
         for key in ("pizza", "drink"):
-            item = tracker.get(key)
+            item = tracker.get(key).lower()
             value = PRICE_TABLES.get(item, 15)
 
             message += f"{item} = R$ {value},00\n"

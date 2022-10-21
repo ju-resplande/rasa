@@ -23,20 +23,16 @@ stories:
       - intent: order_pizza
       - action: show_total
 
-  - story: happy path 4
+  - story: sad path 1
     steps:
-      - intent: ask_pizza_flavors
-      - action: list_pizza_flavors
-      - intent: ask_drinks
-      - action: list_drinks
-      - intent: order_pizza
-      - action: show_total
+      - intent: greet
+      - action: list_order
+      - action: ask_order
+      - intent: mood_unhappy
 
-  - story: happy path 5
+  - story: sad path 2
     steps:
-      - intent: ask_drinks
-      - action: list_drinks
       - intent: ask_pizza_flavors
       - action: list_pizza_flavors
       - intent: order_pizza
-      - action: show_total
+      - intent: mood_unhappy
