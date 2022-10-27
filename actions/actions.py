@@ -26,7 +26,7 @@ class ActionListPizza(Action):
 
 class ActionListDrinks(Action):
     def name(self) -> Text:
-        return "action_list_pizza"
+        return "action_list_drinks"
 
     def run(
         self,
@@ -36,6 +36,23 @@ class ActionListDrinks(Action):
     ) -> List[Dict[Text, Any]]:
 
         message = "Temos disponíveis as seguintes bebidas: " + " ,".join(DRINKS)
+        dispatcher.utter_message(text=message)
+
+        return []
+
+class ActionListMenu(Action):
+    def name(self) -> Text:
+        return "action_list_menu"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
+
+        message = "Temos disponíveis as pizzas de " + " ,".join(PIZZAS)
+        message += "\nE as seguintes bebidas: " + " ,".join(DRINKS)
         dispatcher.utter_message(text=message)
 
         return []
