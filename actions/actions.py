@@ -4,7 +4,7 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk import Action, Tracker
 
 
-from constants import PIZZAS, DRINKS, PRICE_TABLES
+from .constants import PIZZAS, DRINKS, PRICE_TABLES
 
 
 class ActionListPizza(Action):
@@ -26,7 +26,7 @@ class ActionListPizza(Action):
 
 class ActionListDrinks(Action):
     def name(self) -> Text:
-        return "action_list_drinks"
+        return "action_list_pizza"
 
     def run(
         self,
