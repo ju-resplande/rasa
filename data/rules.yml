@@ -5,7 +5,7 @@ rules:
     steps:
       - intent: greet
       - action: action_list_menu
-      - action: action_ask_order
+      - action: utter_ask_order
 
   - rule: Say goodbye anytime the user says goodbye
     steps:
@@ -20,7 +20,7 @@ rules:
 
   - rule: List pizza flavors when the user ask pizza flavors
     steps:
-      - intent: ask_pizza_flavors
+      - intent: ask_pizza
       - action: action_list_pizza
 
   - rule: List drinks when the user ask drinks

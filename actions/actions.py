@@ -26,7 +26,7 @@ class ActionListPizza(Action):
 
 class ActionListDrinks(Action):
     def name(self) -> Text:
-        return "action_list_pizza"
+        return "action_list_drinks"
 
     def run(
         self,

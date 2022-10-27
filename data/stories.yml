@@ -4,35 +4,36 @@ stories:
   - story: happy path
     steps:
       - intent: greet
-      - action: list_order
-      - action: ask_order
+      - action: action_list_menu
+      - action: utter_ask_order
       - intent: order_pizza
-      - action: show_total
+      - action: action_show_total
 
   - story: happy path 2
     steps:
-      - intent: ask_pizza_flavors
-      - action: list_pizza_flavors
+      - intent: ask_pizza
+      - action: action_list_pizza
       - intent: order_pizza
-      - action: show_total
+      - action: action_show_total
 
   - story: happy path 3
     steps:
-      - intent: ask_pizza_flavors
-      - action: list_pizza_flavors
+      - intent: ask_pizza
+      - action: action_list_pizza
       - intent: order_pizza
-      - action: show_total
+      - action: action_show_total
 
   - story: sad path 1
     steps:
       - intent: greet
-      - action: list_order
-      - action: ask_order
+      - action: action_list_menu
+      - action: utter_ask_order
       - intent: mood_unhappy
 
   - story: sad path 2
     steps:
-      - intent: ask_pizza_flavors
-      - action: list_pizza_flavors
+      - intent: ask_pizza
+      - action: action_list_pizza
       - intent: order_pizza
+      - action: action_show_total
       - intent: mood_unhappy

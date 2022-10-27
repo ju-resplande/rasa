@@ -13,7 +13,9 @@ nlu:
 
   - intent: goodbye
     examples: |
+      - até mais
       - até
+      - até logo
 
   - intent: thank
     examples: |
@@ -76,7 +78,7 @@ nlu:
       - Queria pizza de [quatro queijos](pizza_flavor) e um [guaraná](drink)
       - Quero pizza de [frango com catupiri](pizza_flavor) e um [suco de laranja](drink)
 
-  - intent: ask_pizza_flavors
+  - intent: ask_pizza
     examples: |
       - Quais sabores de pizza vocês têm?
       - Quais tipos de pizza vocês têm?
