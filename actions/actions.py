@@ -18,7 +18,7 @@ class ActionListPizza(Action):
         domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
 
-        message = "Temos disponíveis as pizzas de " + " ,".join(PIZZAS)
+        message = "Temos disponíveis as pizzas:" + "\n" + "\n- ".join(PIZZAS)
         dispatcher.utter_message(text=message)
 
         return []
@@ -35,10 +35,11 @@ class ActionListDrinks(Action):
         domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
 
-        message = "Temos disponíveis as seguintes bebidas: " + " ,".join(DRINKS)
+        message = "Temos disponíveis as seguintes bebidas:" + "\n" + "\n- ".join(DRINKS)
         dispatcher.utter_message(text=message)
 
         return []
+
 
 class ActionListMenu(Action):
     def name(self) -> Text:
@@ -51,8 +52,8 @@ class ActionListMenu(Action):
         domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
 
-        message = "Temos disponíveis as pizzas de " + " ,".join(PIZZAS)
-        message += "\nE as seguintes bebidas: " + " ,".join(DRINKS)
+        message = "Temos disponíveis as pizzas:" + "\n" + "\n- ".join(PIZZAS)
+        message += "\nE as seguintes bebidas:" + "\n" + "\n- ".join(DRINKS)
         dispatcher.utter_message(text=message)
 
         return []

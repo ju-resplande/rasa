@@ -16,7 +16,8 @@ DRINKS = [
     "guaraná",
     "guaraná jesus",
     "pepsi",
-    "suco de laranja" "suco de limão",
+    "suco de laranja",
+    "suco de limão",
 ]
 
 
