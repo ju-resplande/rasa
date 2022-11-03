@@ -1,0 +1,69 @@
+// Common entities to be imported and reused
+~[hi]
+    hey
+    ola
+    olá
+    oi
+    bom dia
+    boa tarde
+    boa noite
+
+~[please]
+    por favor
+    pf
+    por gentileza
+
+~[thanks]
+    obrigado
+    brigado
+    obrigada
+    brigada
+    agradeço
+    vlw
+    valeu
+    obg
+
+~[goodbye]
+    até mais
+    até
+    até logo
+    ate
+    ate mais
+    ate logo
+
+~[affirm]
+    sim
+    ss
+    s
+    isso
+    isso mesmo
+    correto
+    certinho
+    certo
+    ok
+    beleza
+    tudo certo
+    joia
+
+~[mood_great]
+    gostei muito
+    amei
+    gostei
+    adorei
+    muito bom
+    bom
+    excelente
+
+~[mood_unhappy]
+    não gostei
+    achei ruim
+    ruim
+    mais ou menos
+    bem mais ou menos
+
+~[negate]
+    não
+    nao
+    n
+    nn
+    incorreto  

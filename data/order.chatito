@@ -1,0 +1,89 @@
+import ./common.chatito
+
+%[order_pizza]('training': '70', 'testing': '30')
+    ~[hi?] ~[order_pizza] @[pizza] ~[please?]? ~[thanks?]
+    ~[hi?] ~[order_pizza] @[pizza] ~[with] @[drink] ~[please?]? ~[thanks?]
+
+%[ask_pizza]('training': '70', 'testing': '30')
+    ~[hi?] ~[ask_pizza] ~[please?]? ~[thanks?]
+
+%[ask_drink]('training': '70', 'testing': '30')
+    ~[hi?] ~[ask_drink] ~[please?]? ~[thanks?]
+
+%[ask_menu]('training': '70', 'testing': '30')
+    ~[ask menu]
+
+%[negate]('training': '70', 'testing': '30')
+    ~[negate]
+
+%[affirm]('training': '70', 'testing': '30')
+    ~[affirm]
+
+%[greet]('training': '70', 'testing': '30')
+    ~[hi]
+
+%[thanks]('training': '70', 'testing': '30')
+    ~[thanks]
+
+%[goodbye]('training': '70', 'testing': '30')
+    ~[goodbye]
+
+%[mood_great]('training': '70', 'testing': '30')
+    ~[mood_great]
+
+%[mood_unhappy]('training': '70', 'testing': '30')
+    ~[mood_unhappy]
+
+~[ask_menu]
+    O que vocês tem?
+    Quais as opções?
+    Quais as opções disponíveis?
+    Qual é o cardápio?
+
+~[with]
+    com um
+    com uma
+    com
+    e
+    e um
+    e uma
+
+~[order_pizza]
+    Quero uma pizza de
+    Gostaria de uma pizza de
+    Vou pedir uma pizza de
+    Vou querer uma pizza de
+    Queria uma pizza de 
+
+~[ask_pizza]
+    Quais pizzas vocês têm?
+    Quais pizzas vocês tem?
+    Quais sabores de pizza vocês têm?
+    Quais sabores de pizza vocês tem?
+    Quais tipos de pizza vocês têm?
+    Quais tipos de pizza vocês tem?
+    Quais os tipos de pizza disponíveis?
+    Quais as opções
+
+~[ask_drink]
+    Quais bebidas vocês têm?
+    Quais bebidas vocês tem?
+    Quais bebidas vocês têm disponíveis?
+    Quais bebidas vocês tem disponíveis?
+
+@[pizza]
+    quatro-queijos
+    marguerita
+    lombo
+    bacon
+    portuguesa
+    peperoni
+    muçarela
+    frango com catupiry
+
+@[drink]
+    coca-cola
+    guaraná
+    guaraná jesus
+    pepsi
+    suco de laranja
