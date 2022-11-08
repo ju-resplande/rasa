@@ -1,0 +1,50 @@
+[
+  {
+    "text": "olá",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.2891903221607208
+    }
+  },
+  {
+    "text": "obg",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.35510143637657166
+    }
+  },
+  {
+    "text": "não gostei",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "negate",
+      "confidence": 0.45647671818733215
+    }
+  },
+  {
+    "text": "achei ruim",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "negate",
+      "confidence": 0.36858686804771423
+    }
+  },
+  {
+    "text": "mais ou menos",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.2860657572746277
+    }
+  },
+  {
+    "text": "bem mais ou menos",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "negate",
+      "confidence": 0.2557923197746277
+    }
+  }
+]

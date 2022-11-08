@@ -1,0 +1,19 @@
+version: "3.1"
+stories:
+- story: happy path 3 (./tests/test_stories.yml)
+  steps:
+  - intent: ask_drink
+  - action: action_list_drink
+  - intent: ask_pizza
+  - action: action_list_pizza
+  - intent: ask_drink
+  - action: action_list_drink
+  - action: action_show_total  # predicted: action_listen
+- story: sad path 2 (./tests/test_stories.yml)
+  steps:
+  - intent: ask_pizza
+  - action: action_list_pizza
+  - intent: order_pizza
+  - action: action_listen  # predicted: action_show_total
+  - intent: mood_unhappy
+  - action: action_listen  # predicted: action_unlikely_intent
