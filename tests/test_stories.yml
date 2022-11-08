@@ -6,15 +6,15 @@ stories:
     steps:
       - intent: ask_pizza
       - action: action_list_pizza
-      - intent: ask_drinks
-      - action: action_list_drinks
+      - intent: ask_drink
+      - action: action_list_drink
       - intent: order_pizza
       - action: action_show_total
 
   - story: happy path 2
     steps:
-      - intent: ask_drinks
-      - action: action_list_drinks
+      - intent: ask_drink
+      - action: action_list_drink
       - intent: ask_pizza
       - action: action_list_pizza
       - intent: order_pizza
@@ -22,20 +22,20 @@ stories:
 
   - story: happy path 3
     steps:
-      - intent: ask_drinks
-      - action: action_list_drinks
+      - intent: ask_drink
+      - action: action_list_drink
       - intent: ask_pizza
       - action: action_list_pizza
-      - intent: ask_drinks
-      - action: action_list_drinks
+      - intent: ask_drink
+      - action: action_list_drink
       - action: action_show_total
 
   - story: sad path 1
     steps:
       - intent: ask_pizza
       - action: action_list_pizza
-      - intent: ask_drinks
-      - action: action_list_drinks
+      - intent: ask_drink
+      - action: action_list_drink
       - intent: order_pizza
       - action: action_show_total
 
