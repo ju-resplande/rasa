@@ -4,6 +4,7 @@ stories:
   - story: happy path
     steps:
       - intent: greet
+      - action: utter_greet
       - action: action_list_menu
       - action: utter_ask_order
       - intent: order_pizza
@@ -26,6 +27,7 @@ stories:
   - story: sad path 1
     steps:
       - intent: greet
+      - action: utter_greet
       - action: action_list_menu
       - action: utter_ask_order
       - intent: mood_unhappy

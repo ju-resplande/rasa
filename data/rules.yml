@@ -1,9 +1,10 @@
 version: "3.1"
 
 rules:
-  - rule: List order and ask  anytime the user greet
+  - rule: Greet back, list order and ask order anytime the user greets
     steps:
       - intent: greet
+      - action: utter_greet
       - action: action_list_menu
       - action: utter_ask_order
 

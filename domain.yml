@@ -1,44 +1,44 @@
-version: "3.1"
+version: '3.1'
 intents:
-  - affirm
-  - ask_drinks
-  - ask_menu
-  - ask_pizza
-  - deny
-  - goodbye
-  - greet
-  - mood_great
-  - mood_unhappy
-  - order_pizza
-  - thank
+- affirm
+- ask_drinks
+- ask_menu
+- ask_pizza
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- order_pizza
+- thank
 entities:
-  - pizza
-  - drink
+- pizza
+- drink
 slots:
   pizza:
     type: text
     mappings:
-      - type: from_entity
-        entity: pizza
+    - type: from_entity
+      entity: pizza
   drink:
     type: text
     mappings:
-      - type: from_entity
-        entity: drink
+    - type: from_entity
+      entity: drink
 responses:
   utter_greet:
-    - text: Olá
+  - text: Olá. Seja bem-vindo a pizzaria Turing.
   utter_did_that_help:
-    - text: Isso te ajudou
+  - text: Isso te ajudou?
   utter_goodbye:
-    - text: Até
+  - text: Até
   utter_ask_order:
-    - text: O que gostaria de pedir?
+  - text: O que gostaria de pedir?
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
-  - action_list_drinks
-  - action_list_menu
-  - action_list_pizza
-  - action_show_total
+- action_list_drinks
+- action_list_menu
+- action_list_pizza
+- action_show_total
