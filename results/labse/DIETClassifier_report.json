@@ -1,0 +1,35 @@
+{
+  "pizza": {
+    "precision": 1.0,
+    "recall": 0.5111111111111111,
+    "f1-score": 0.676470588235294,
+    "support": 90,
+    "confused_with": {}
+  },
+  "drink": {
+    "precision": 1.0,
+    "recall": 0.4473684210526316,
+    "f1-score": 0.6181818181818182,
+    "support": 114,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.47549019607843135,
+    "f1-score": 0.6445182724252491,
+    "support": 204
+  },
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 0.47923976608187135,
+    "f1-score": 0.647326203208556,
+    "support": 204
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 0.47549019607843135,
+    "f1-score": 0.6438974520289399,
+    "support": 204
+  },
+  "accuracy": 0.9489990467111534
+}

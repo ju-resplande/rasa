@@ -1,0 +1,75 @@
+{
+  "action_list_pizza": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "action_show_total": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
+    "support": 3
+  },
+  "action_listen": {
+    "precision": 0.9166666666666666,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.9166666666666666,
+    "support": 12
+  },
+  "ask_pizza": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "ask_drink": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "order_pizza": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "action_list_drink": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "mood_unhappy": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "accuracy": 0.9428571428571428,
+  "macro avg": {
+    "precision": 0.9479166666666666,
+    "recall": 0.9479166666666666,
+    "f1-score": 0.9479166666666666,
+    "support": 35
+  },
+  "weighted avg": {
+    "precision": 0.9428571428571428,
+    "recall": 0.9428571428571428,
+    "f1-score": 0.9428571428571428,
+    "support": 35
+  },
+  "micro avg": {
+    "precision": 0.9428571428571428,
+    "recall": 0.9428571428571428,
+    "f1-score": 0.9428571428571428,
+    "support": 35
+  },
+  "conversation_accuracy": {
+    "accuracy": 0.5,
+    "correct": 2,
+    "with_warnings": 0,
+    "total": 4
+  }
+}

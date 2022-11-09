@@ -1,0 +1,115 @@
+{
+  "goodbye": {
+    "precision": 0.75,
+    "recall": 0.5,
+    "f1-score": 0.6,
+    "support": 6,
+    "confused_with": {
+      "greet": 2,
+      "mood_great": 1
+    }
+  },
+  "mood_great": {
+    "precision": 0.29411764705882354,
+    "recall": 1.0,
+    "f1-score": 0.45454545454545453,
+    "support": 5,
+    "confused_with": {}
+  },
+  "negate": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 3,
+    "confused_with": {
+      "greet": 1
+    }
+  },
+  "thanks": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "mood_great": 5,
+      "ask_menu": 1
+    }
+  },
+  "affirm": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1-score": 0.888888888888889,
+    "support": 10,
+    "confused_with": {
+      "mood_great": 1,
+      "goodbye": 1
+    }
+  },
+  "ask_pizza": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 70,
+    "confused_with": {}
+  },
+  "mood_unhappy": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1-score": 0.4,
+    "support": 4,
+    "confused_with": {
+      "mood_great": 3
+    }
+  },
+  "ask_menu": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "mood_great": 1
+    }
+  },
+  "ask_drink": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 70,
+    "confused_with": {}
+  },
+  "order_pizza": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 70,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 0.5,
+    "recall": 0.75,
+    "f1-score": 0.6,
+    "support": 4,
+    "confused_with": {
+      "mood_great": 1
+    }
+  },
+  "accuracy": 0.9317269076305221,
+  "macro avg": {
+    "precision": 0.6858288770053476,
+    "recall": 0.6333333333333333,
+    "f1-score": 0.6130394857667585,
+    "support": 249
+  },
+  "weighted avg": {
+    "precision": 0.943656980864635,
+    "recall": 0.9317269076305221,
+    "f1-score": 0.9283599042635188,
+    "support": 249
+  },
+  "micro avg": {
+    "precision": 0.9317269076305221,
+    "recall": 0.9317269076305221,
+    "f1-score": 0.9317269076305221,
+    "support": 249
+  }
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "text": "ask menu",
+    "intent": "ask_menu",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.3007875680923462
+    }
+  },
+  {
+    "text": "nao",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.31158751249313354
+    }
+  },
+  {
+    "text": "beleza",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.29896220564842224
+    }
+  },
+  {
+    "text": "joia",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.18992434442043304
+    }
+  },
+  {
+    "text": "olá",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.42842718958854675
+    }
+  },
+  {
+    "text": "obrigado",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.2927510440349579
+    }
+  },
+  {
+    "text": "brigado",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "ask_menu",
+      "confidence": 0.2738366723060608
+    }
+  },
+  {
+    "text": "obrigada",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.25658711791038513
+    }
+  },
+  {
+    "text": "brigada",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.32774028182029724
+    }
+  },
+  {
+    "text": "agradeço",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6140469908714294
+    }
+  },
+  {
+    "text": "obg",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.2388438582420349
+    }
+  },
+  {
+    "text": "até",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.21780617535114288
+    }
+  },
+  {
+    "text": "ate",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.33489373326301575
+    }
+  },
+  {
+    "text": "ate logo",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.18537861108779907
+    }
+  },
+  {
+    "text": "não gostei",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.3452976942062378
+    }
+  },
+  {
+    "text": "achei ruim",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.281964510679245
+    }
+  },
+  {
+    "text": "mais ou menos",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.271619588136673
+    }
+  }
+]
