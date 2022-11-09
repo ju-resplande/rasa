@@ -1,0 +1,864 @@
+[
+  {
+    "text": "ola Queria uma pizza de frango com catupiry pf. vlw",
+    "entities": [
+      {
+        "end": 43,
+        "entity": "pizza",
+        "start": 24,
+        "value": "frango com catupiry"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 24,
+        "end": 30,
+        "confidence_entity": 0.709831714630127,
+        "value": "frango",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pizza",
+        "start": 35,
+        "end": 43,
+        "confidence_entity": 0.9671447277069092,
+        "value": "catupiry",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "boa noite Queria uma pizza de frango com catupiry com um guaraná jesus por gentileza.",
+    "entities": [
+      {
+        "end": 49,
+        "entity": "pizza",
+        "start": 30,
+        "value": "frango com catupiry"
+      },
+      {
+        "end": 70,
+        "entity": "drink",
+        "start": 57,
+        "value": "guaraná jesus"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 30,
+        "end": 36,
+        "confidence_entity": 0.7069035768508911,
+        "value": "frango",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pizza",
+        "start": 41,
+        "end": 49,
+        "confidence_entity": 0.9705928564071655,
+        "value": "catupiry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 57,
+        "end": 70,
+        "confidence_entity": 0.8354265093803406,
+        "value": "guaraná jesus",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "boa tarde Quero uma pizza de muçarela e um suco de laranja . obrigada",
+    "entities": [
+      {
+        "end": 37,
+        "entity": "pizza",
+        "start": 29,
+        "value": "muçarela"
+      },
+      {
+        "end": 58,
+        "entity": "drink",
+        "start": 43,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 29,
+        "end": 37,
+        "confidence_entity": 0.9832489490509033,
+        "value": "muçarela",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 43,
+        "end": 47,
+        "confidence_entity": 0.8250002264976501,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 51,
+        "end": 58,
+        "confidence_entity": 0.8959160447120667,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "oi Gostaria de uma pizza de frango com catupiry e um guaraná jesus por gentileza. agradeço",
+    "entities": [
+      {
+        "end": 47,
+        "entity": "pizza",
+        "start": 28,
+        "value": "frango com catupiry"
+      },
+      {
+        "end": 66,
+        "entity": "drink",
+        "start": 53,
+        "value": "guaraná jesus"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.7022730708122253,
+        "value": "frango",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pizza",
+        "start": 39,
+        "end": 47,
+        "confidence_entity": 0.9703021049499512,
+        "value": "catupiry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 53,
+        "end": 66,
+        "confidence_entity": 0.8355687260627747,
+        "value": "guaraná jesus",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "olá Vou querer uma pizza de frango com catupiry com uma suco de laranja por gentileza. vlw",
+    "entities": [
+      {
+        "end": 47,
+        "entity": "pizza",
+        "start": 28,
+        "value": "frango com catupiry"
+      },
+      {
+        "end": 71,
+        "entity": "drink",
+        "start": 56,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.703529417514801,
+        "value": "frango",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pizza",
+        "start": 39,
+        "end": 47,
+        "confidence_entity": 0.9701821208000183,
+        "value": "catupiry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 56,
+        "end": 60,
+        "confidence_entity": 0.7967333793640137,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 64,
+        "end": 71,
+        "confidence_entity": 0.8902362585067749,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "olá Vou querer uma pizza de frango com catupiry e guaraná por favor. valeu",
+    "entities": [
+      {
+        "end": 47,
+        "entity": "pizza",
+        "start": 28,
+        "value": "frango com catupiry"
+      },
+      {
+        "end": 57,
+        "entity": "drink",
+        "start": 50,
+        "value": "guaraná"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.707114040851593,
+        "value": "frango",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pizza",
+        "start": 39,
+        "end": 47,
+        "confidence_entity": 0.9701274037361145,
+        "value": "catupiry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 50,
+        "end": 57,
+        "confidence_entity": 0.8322652578353882,
+        "value": "guaraná",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "olá Quero uma pizza de marguerita com suco de laranja por gentileza.",
+    "entities": [
+      {
+        "end": 33,
+        "entity": "pizza",
+        "start": 23,
+        "value": "marguerita"
+      },
+      {
+        "end": 53,
+        "entity": "drink",
+        "start": 38,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 23,
+        "end": 33,
+        "confidence_entity": 0.9888872504234314,
+        "value": "marguerita",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 38,
+        "end": 42,
+        "confidence_entity": 0.8008607625961304,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 46,
+        "end": 53,
+        "confidence_entity": 0.891533613204956,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ola Vou pedir uma pizza de muçarela e suco de laranja . brigada",
+    "entities": [
+      {
+        "end": 35,
+        "entity": "pizza",
+        "start": 27,
+        "value": "muçarela"
+      },
+      {
+        "end": 53,
+        "entity": "drink",
+        "start": 38,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 27,
+        "end": 35,
+        "confidence_entity": 0.9834112524986267,
+        "value": "muçarela",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 38,
+        "end": 42,
+        "confidence_entity": 0.8205409646034241,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 46,
+        "end": 53,
+        "confidence_entity": 0.8948840498924255,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "boa noite Vou querer uma pizza de frango com catupiry com um guaraná jesus por gentileza. valeu",
+    "entities": [
+      {
+        "end": 53,
+        "entity": "pizza",
+        "start": 34,
+        "value": "frango com catupiry"
+      },
+      {
+        "end": 74,
+        "entity": "drink",
+        "start": 61,
+        "value": "guaraná jesus"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 34,
+        "end": 40,
+        "confidence_entity": 0.6920335292816162,
+        "value": "frango",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pizza",
+        "start": 45,
+        "end": 53,
+        "confidence_entity": 0.9716659784317017,
+        "value": "catupiry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 61,
+        "end": 74,
+        "confidence_entity": 0.8387914299964905,
+        "value": "guaraná jesus",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "oi Vou querer uma pizza de portuguesa e uma suco de laranja por favor. obg",
+    "entities": [
+      {
+        "end": 37,
+        "entity": "pizza",
+        "start": 27,
+        "value": "portuguesa"
+      },
+      {
+        "end": 59,
+        "entity": "drink",
+        "start": 44,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 27,
+        "end": 37,
+        "confidence_entity": 0.9853581190109253,
+        "value": "portuguesa",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 44,
+        "end": 48,
+        "confidence_entity": 0.8235355615615845,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 52,
+        "end": 59,
+        "confidence_entity": 0.8952763676643372,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "boa tarde Vou querer uma pizza de muçarela com um suco de laranja por gentileza. vlw",
+    "entities": [
+      {
+        "end": 42,
+        "entity": "pizza",
+        "start": 34,
+        "value": "muçarela"
+      },
+      {
+        "end": 65,
+        "entity": "drink",
+        "start": 50,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 34,
+        "end": 42,
+        "confidence_entity": 0.9828978776931763,
+        "value": "muçarela",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 50,
+        "end": 54,
+        "confidence_entity": 0.8166330456733704,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 58,
+        "end": 65,
+        "confidence_entity": 0.8932961225509644,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Queria uma pizza de muçarela com um suco de laranja . brigada",
+    "entities": [
+      {
+        "end": 28,
+        "entity": "pizza",
+        "start": 20,
+        "value": "muçarela"
+      },
+      {
+        "end": 51,
+        "entity": "drink",
+        "start": 36,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 20,
+        "end": 28,
+        "confidence_entity": 0.9832311868667603,
+        "value": "muçarela",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 36,
+        "end": 40,
+        "confidence_entity": 0.7994611263275146,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 44,
+        "end": 51,
+        "confidence_entity": 0.8935791254043579,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "boa tarde Quero uma pizza de peperoni e uma suco de laranja . valeu",
+    "entities": [
+      {
+        "end": 37,
+        "entity": "pizza",
+        "start": 29,
+        "value": "peperoni"
+      },
+      {
+        "end": 59,
+        "entity": "drink",
+        "start": 44,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 29,
+        "end": 37,
+        "confidence_entity": 0.9910182952880859,
+        "value": "peperoni",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 44,
+        "end": 48,
+        "confidence_entity": 0.8276322484016418,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 52,
+        "end": 59,
+        "confidence_entity": 0.8979825377464294,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "oi Vou pedir uma pizza de frango com catupiry e uma coca-cola por favor. brigada",
+    "entities": [
+      {
+        "end": 45,
+        "entity": "pizza",
+        "start": 26,
+        "value": "frango com catupiry"
+      },
+      {
+        "end": 61,
+        "entity": "drink",
+        "start": 52,
+        "value": "coca-cola"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 26,
+        "end": 32,
+        "confidence_entity": 0.7069302797317505,
+        "value": "frango",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pizza",
+        "start": 37,
+        "end": 45,
+        "confidence_entity": 0.9700276255607605,
+        "value": "catupiry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 52,
+        "end": 61,
+        "confidence_entity": 0.9466996192932129,
+        "value": "coca-cola",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ola Quero uma pizza de frango com catupiry com um suco de laranja pf. obg",
+    "entities": [
+      {
+        "end": 42,
+        "entity": "pizza",
+        "start": 23,
+        "value": "frango com catupiry"
+      },
+      {
+        "end": 65,
+        "entity": "drink",
+        "start": 50,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.7064998745918274,
+        "value": "frango",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pizza",
+        "start": 34,
+        "end": 42,
+        "confidence_entity": 0.9675767421722412,
+        "value": "catupiry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 50,
+        "end": 54,
+        "confidence_entity": 0.8146393895149231,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 58,
+        "end": 65,
+        "confidence_entity": 0.8937678337097168,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Queria uma pizza de frango com catupiry e um pepsi . brigada",
+    "entities": [
+      {
+        "end": 39,
+        "entity": "pizza",
+        "start": 20,
+        "value": "frango com catupiry"
+      },
+      {
+        "end": 50,
+        "entity": "drink",
+        "start": 45,
+        "value": "pepsi"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 20,
+        "end": 26,
+        "confidence_entity": 0.7052291631698608,
+        "value": "frango",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pizza",
+        "start": 31,
+        "end": 39,
+        "confidence_entity": 0.9641764760017395,
+        "value": "catupiry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 45,
+        "end": 50,
+        "confidence_entity": 0.7039119005203247,
+        "value": "pepsi",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hey Queria uma pizza de muçarela com suco de laranja por favor. obg",
+    "entities": [
+      {
+        "end": 32,
+        "entity": "pizza",
+        "start": 24,
+        "value": "muçarela"
+      },
+      {
+        "end": 52,
+        "entity": "drink",
+        "start": 37,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 24,
+        "end": 32,
+        "confidence_entity": 0.9831224083900452,
+        "value": "muçarela",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 37,
+        "end": 41,
+        "confidence_entity": 0.7980176210403442,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 45,
+        "end": 52,
+        "confidence_entity": 0.8921494483947754,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ola Vou querer uma pizza de bacon com um suco de laranja pf. agradeço",
+    "entities": [
+      {
+        "end": 33,
+        "entity": "pizza",
+        "start": 28,
+        "value": "bacon"
+      },
+      {
+        "end": 56,
+        "entity": "drink",
+        "start": 41,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 28,
+        "end": 33,
+        "confidence_entity": 0.9753386974334717,
+        "value": "bacon",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 41,
+        "end": 45,
+        "confidence_entity": 0.8248651623725891,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 49,
+        "end": 56,
+        "confidence_entity": 0.8965941071510315,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "olá Queria uma pizza de frango com catupiry e uma guaraná por gentileza. agradeço",
+    "entities": [
+      {
+        "end": 43,
+        "entity": "pizza",
+        "start": 24,
+        "value": "frango com catupiry"
+      },
+      {
+        "end": 57,
+        "entity": "drink",
+        "start": 50,
+        "value": "guaraná"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 24,
+        "end": 30,
+        "confidence_entity": 0.7064452171325684,
+        "value": "frango",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "pizza",
+        "start": 35,
+        "end": 43,
+        "confidence_entity": 0.9671483635902405,
+        "value": "catupiry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 50,
+        "end": 57,
+        "confidence_entity": 0.832261860370636,
+        "value": "guaraná",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ola Vou pedir uma pizza de bacon com uma suco de laranja pf. valeu",
+    "entities": [
+      {
+        "end": 32,
+        "entity": "pizza",
+        "start": 27,
+        "value": "bacon"
+      },
+      {
+        "end": 56,
+        "entity": "drink",
+        "start": 41,
+        "value": "suco de laranja"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza",
+        "start": 27,
+        "end": 32,
+        "confidence_entity": 0.975837767124176,
+        "value": "bacon",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 41,
+        "end": 45,
+        "confidence_entity": 0.8263453245162964,
+        "value": "suco",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "drink",
+        "start": 49,
+        "end": 56,
+        "confidence_entity": 0.8966678977012634,
+        "value": "laranja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

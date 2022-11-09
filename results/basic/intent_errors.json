@@ -1,0 +1,58 @@
+[
+  {
+    "text": "não",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.25322476029396057
+    }
+  },
+  {
+    "text": "olá",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "ask_pizza",
+      "confidence": 0.30339378118515015
+    }
+  },
+  {
+    "text": "bom dia",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.42398303747177124
+    }
+  },
+  {
+    "text": "boa tarde",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.19044727087020874
+    }
+  },
+  {
+    "text": "boa noite",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "negate",
+      "confidence": 0.30702313780784607
+    }
+  },
+  {
+    "text": "amei",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.42509594559669495
+    }
+  },
+  {
+    "text": "não gostei",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.3893265128135681
+    }
+  }
+]
