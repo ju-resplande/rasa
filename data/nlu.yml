@@ -1,275 +1,280 @@
 version: "3.1"
 nlu:
-  - intent: order_pizza
-    examples: |
-      - boa tarde Vou querer uma pizza de [bacon](pizza) com um [pepsi](drink) . agradeço
-      - olá Queria uma pizza de [bacon](pizza) com um [guaraná jesus](drink) pf. valeu
-      - hey Quero uma pizza de [bacon](pizza) e uma [guaraná jesus](drink) por favor. brigado
-      - Queria uma pizza de [bacon](pizza) e [guaraná jesus](drink) por favor. obrigado
-      - olá Vou pedir uma pizza de [bacon](pizza) e um [guaraná](drink) por favor. valeu
-      - boa noite Queria uma pizza de [peperoni](pizza) e [pepsi](drink) . agradeço
-      - hey Vou querer uma pizza de [portuguesa](pizza) e [pepsi](drink) .
-      - ola Queria uma pizza de [frango com catupiry](pizza) pf. vlw
-      - oi Vou pedir uma pizza de [peperoni](pizza) com [guaraná jesus](drink) . obrigado
-      - Quero uma pizza de [quatro-queijos](pizza) por favor. obrigado
-      - boa noite Queria uma pizza de [frango com catupiry](pizza) com um [guaraná jesus](drink) por gentileza.
-      - oi Gostaria de uma pizza de [bacon](pizza) com [pepsi](drink) por gentileza. vlw
-      - boa tarde Quero uma pizza de [muçarela](pizza) e um [suco de laranja](drink) . obrigada
-      - oi Gostaria de uma pizza de [frango com catupiry](pizza) e um [guaraná jesus](drink) por gentileza. agradeço
-      - boa tarde Gostaria de uma pizza de [portuguesa](pizza) e uma [guaraná jesus](drink) pf. obg
-      - oi Quero uma pizza de [quatro-queijos](pizza) e um [guaraná jesus](drink) . agradeço
-      - olá Vou querer uma pizza de [frango com catupiry](pizza) com uma [suco de laranja](drink) por gentileza. vlw
-      - bom dia Vou querer uma pizza de [portuguesa](pizza) e [pepsi](drink) por gentileza. brigada
-      - olá Vou querer uma pizza de [frango com catupiry](pizza) e [guaraná](drink) por favor. valeu
-      - ola Vou querer uma pizza de [lombo](pizza) e [coca-cola](drink) . obrigado
-      - olá Quero uma pizza de [marguerita](pizza) com [suco de laranja](drink) por gentileza.
-      - boa noite Vou pedir uma pizza de [marguerita](pizza) com [guaraná](drink) .
-      - olá Quero uma pizza de [peperoni](pizza) com uma [guaraná jesus](drink) por favor. brigado
-      - Vou querer uma pizza de [bacon](pizza) e [pepsi](drink) por gentileza. obrigada
-      - bom dia Vou querer uma pizza de [marguerita](pizza) com [guaraná](drink) por gentileza. valeu
-      - ola Vou pedir uma pizza de [muçarela](pizza) e [suco de laranja](drink) . brigada
-      - oi Vou pedir uma pizza de [peperoni](pizza) com uma [guaraná jesus](drink) pf. obrigada
-      - bom dia Vou pedir uma pizza de [portuguesa](pizza) com [coca-cola](drink) por gentileza. obrigada
-      - boa noite Vou querer uma pizza de [frango com catupiry](pizza) com um [guaraná jesus](drink) por gentileza. valeu
-      - bom dia Quero uma pizza de [bacon](pizza) com uma [guaraná jesus](drink) pf. valeu
-      - bom dia Queria uma pizza de [marguerita](pizza) e [guaraná](drink) pf. agradeço
-      - oi Vou querer uma pizza de [portuguesa](pizza) e uma [suco de laranja](drink) por favor. obg
-      - ola Vou pedir uma pizza de [muçarela](pizza) com uma [pepsi](drink) . obrigada
-      - olá Queria uma pizza de [bacon](pizza) e um [guaraná](drink) . obrigado
-      - boa tarde Gostaria de uma pizza de [portuguesa](pizza) e um [guaraná](drink) por gentileza. brigada
-      - boa tarde Vou querer uma pizza de [muçarela](pizza) com um [suco de laranja](drink) por gentileza. vlw
-      - Queria uma pizza de [muçarela](pizza) com um [suco de laranja](drink) . brigada
-      - Vou querer uma pizza de [bacon](pizza) com um [coca-cola](drink) por gentileza. obg
-      - Vou pedir uma pizza de [bacon](pizza) e um [guaraná](drink) pf. obg
-      - boa tarde Queria uma pizza de [marguerita](pizza) e uma [coca-cola](drink) por gentileza. obrigada
-      - ola Quero uma pizza de [peperoni](pizza) e um [guaraná jesus](drink) . vlw
-      - boa tarde Gostaria de uma pizza de [peperoni](pizza) e [guaraná](drink) por favor. obrigado
-      - boa tarde Quero uma pizza de [peperoni](pizza) e uma [suco de laranja](drink) . valeu
-      - oi Vou pedir uma pizza de [frango com catupiry](pizza) e uma [coca-cola](drink) por favor. brigada
-      - hey Vou pedir uma pizza de [portuguesa](pizza) com [pepsi](drink) pf. brigado
-      - boa tarde Gostaria de uma pizza de [portuguesa](pizza) e uma [pepsi](drink) pf. agradeço
-      - boa noite Vou pedir uma pizza de [bacon](pizza) e [coca-cola](drink) pf. obrigada
-      - ola Quero uma pizza de [frango com catupiry](pizza) com um [suco de laranja](drink) pf. obg
-      - Queria uma pizza de [frango com catupiry](pizza) e um [pepsi](drink) . brigada
-      - olá Queria uma pizza de [muçarela](pizza) com uma [coca-cola](drink) por gentileza.
-      - boa noite Gostaria de uma pizza de [portuguesa](pizza) e um [coca-cola](drink) por favor. brigado
-      - boa noite Gostaria de uma pizza de [marguerita](pizza) e uma [guaraná jesus](drink) por favor. obg
-      - ola Gostaria de uma pizza de [portuguesa](pizza) e um [guaraná jesus](drink) pf. obg
-      - olá Quero uma pizza de [bacon](pizza) e um [pepsi](drink) por gentileza.
-      - olá Gostaria de uma pizza de [quatro-queijos](pizza) com uma [guaraná jesus](drink) . valeu
-      - hey Queria uma pizza de [muçarela](pizza) com [suco de laranja](drink) por favor. obg
-      - hey Gostaria de uma pizza de [peperoni](pizza) e [guaraná jesus](drink) . vlw
-      - ola Queria uma pizza de [quatro-queijos](pizza) e uma [guaraná jesus](drink) . obrigada
-      - ola Vou querer uma pizza de [bacon](pizza) com um [suco de laranja](drink) pf. agradeço
-      - olá Queria uma pizza de [frango com catupiry](pizza) e uma [guaraná](drink) por gentileza. agradeço
-      - olá Vou querer uma pizza de [peperoni](pizza) com uma [guaraná jesus](drink) . agradeço
-      - oi Vou querer uma pizza de [lombo](pizza) com uma [guaraná](drink) por favor. obrigado
-      - ola Quero uma pizza de [quatro-queijos](pizza) e uma [coca-cola](drink) por gentileza. agradeço
-      - hey Queria uma pizza de [quatro-queijos](pizza) com uma [coca-cola](drink) pf. brigado
-      - boa tarde Vou pedir uma pizza de [peperoni](pizza) e uma [pepsi](drink) por gentileza. vlw
-      - olá Queria uma pizza de [marguerita](pizza) com um [guaraná jesus](drink) por gentileza. obrigado
-      - hey Vou pedir uma pizza de [peperoni](pizza) e um [guaraná jesus](drink) por gentileza. obrigada
-      - Vou querer uma pizza de [lombo](pizza) com [pepsi](drink) por gentileza. valeu
-      - ola Vou pedir uma pizza de [bacon](pizza) com uma [suco de laranja](drink) pf. valeu
-      - Queria uma pizza de [quatro-queijos](pizza) com [guaraná jesus](drink) pf. vlw
-      - Quero uma pizza [quatro-queijos](pizza).
-      - Vou querer uma pizza [marguerita](pizza) e uma [coca-cola](drink)
-  - intent: ask_pizza
-    examples: |
-      - olá Quais tipos de pizza vocês têm? por favor? brigado
-      - ola Quais pizzas vocês tem? por gentileza? valeu
-      - olá Quais sabores de pizza vocês têm? pf? valeu
-      - ola Quais os tipos de pizza disponíveis? pf? brigada
-      - ola Quais sabores de pizza vocês tem? por favor? agradeço
-      - oi Quais sabores de pizza vocês tem? por gentileza? valeu
-      - bom dia Quais sabores de pizza vocês tem? por gentileza? brigado
-      - ola Quais tipos de pizza vocês têm? por gentileza? brigada
-      - boa noite Quais tipos de pizza vocês têm? por gentileza? valeu
-      - hey Quais sabores de pizza vocês tem? pf? vlw
-      - boa noite Quais as opções por gentileza? valeu
-      - oi Quais as opções pf? brigado
-      - boa tarde Quais pizzas vocês tem? pf? vlw
-      - bom dia Quais pizzas vocês têm? pf? obrigado
-      - Quais sabores de pizza vocês tem? ? valeu
-      - olá Quais tipos de pizza vocês tem? por gentileza? obrigada
-      - ola Quais pizzas vocês têm? ? obrigada
-      - ola Quais sabores de pizza vocês tem? ? vlw
-      - boa noite Quais tipos de pizza vocês tem? por gentileza? agradeço
-      - oi Quais sabores de pizza vocês têm? por favor? vlw
-      - hey Quais pizzas vocês tem? pf? obg
-      - ola Quais pizzas vocês tem? ? obg
-      - olá Quais sabores de pizza vocês têm? pf? agradeço
-      - bom dia Quais tipos de pizza vocês tem? pf? obrigada
-      - boa tarde Quais sabores de pizza vocês têm? por gentileza? obrigada
-      - hey Quais os tipos de pizza disponíveis? por favor? obrigada
-      - boa tarde Quais sabores de pizza vocês tem? por gentileza?
-      - bom dia Quais tipos de pizza vocês tem? por favor? obrigada
-      - boa tarde Quais tipos de pizza vocês têm? pf?
-      - ola Quais pizzas vocês têm? pf? valeu
-      - boa noite Quais sabores de pizza vocês têm? pf?
-      - hey Quais pizzas vocês tem? pf?
-      - olá Quais as opções ? brigado
-      - oi Quais sabores de pizza vocês têm? pf?
-      - bom dia Quais os tipos de pizza disponíveis? por favor? obg
-      - ola Quais tipos de pizza vocês têm? ? brigado
-      - olá Quais tipos de pizza vocês têm? pf? vlw
-      - ola Quais sabores de pizza vocês têm? ? brigado
-      - bom dia Quais tipos de pizza vocês tem? ?
-      - hey Quais as opções por favor? obrigado
-      - bom dia Quais sabores de pizza vocês têm? pf? valeu
-      - bom dia Quais pizzas vocês têm? por favor? obg
-      - olá Quais sabores de pizza vocês tem? por favor? agradeço
-      - olá Quais tipos de pizza vocês têm? ?
-      - boa tarde Quais pizzas vocês tem? ? obrigado
-      - hey Quais sabores de pizza vocês tem? por favor? vlw
-      - ola Quais tipos de pizza vocês tem? por favor? obrigado
-      - ola Quais as opções pf? obrigado
-      - Quais pizzas vocês tem? ? agradeço
-      - oi Quais as opções por gentileza? valeu
-      - boa tarde Quais tipos de pizza vocês tem? pf? valeu
-      - ola Quais tipos de pizza vocês tem? por favor? obg
-      - hey Quais sabores de pizza vocês têm? pf? brigada
-      - olá Quais sabores de pizza vocês têm? por gentileza? brigada
-      - boa noite Quais tipos de pizza vocês tem? ? brigado
-      - boa tarde Quais tipos de pizza vocês tem? pf? brigada
-      - hey Quais tipos de pizza vocês tem? por gentileza? agradeço
-      - olá Quais tipos de pizza vocês têm? pf? obg
-      - oi Quais as opções por gentileza? obrigado
-      - hey Quais pizzas vocês tem? ? brigado
-      - olá Quais pizzas vocês tem? ? brigada
-      - hey Quais tipos de pizza vocês têm? por gentileza? agradeço
-      - ola Quais pizzas vocês tem? por favor? obrigada
-      - Quais pizzas vocês tem? por favor? brigado
-      - ola Quais sabores de pizza vocês tem? por favor? brigada
-      - oi Quais sabores de pizza vocês tem? ? brigada
-      - boa noite Quais tipos de pizza vocês têm? por favor? obg
-      - Quais os tipos de pizza disponíveis? ? obrigada
-      - bom dia Quais sabores de pizza vocês têm? por gentileza? agradeço
-      - boa tarde Quais tipos de pizza vocês têm? ? obg
-  - intent: ask_drink
-    examples: |
-      - boa tarde Quais bebidas vocês tem disponíveis? por gentileza? obg
-      - bom dia Quais bebidas vocês tem disponíveis? por favor? obrigado
-      - Quais bebidas vocês tem? pf? obrigada
-      - boa tarde Quais bebidas vocês tem? por gentileza? agradeço
-      - Quais bebidas vocês tem? ? brigada
-      - oi Quais bebidas vocês têm? ? valeu
-      - Quais bebidas vocês têm? ? brigada
-      - bom dia Quais bebidas vocês tem disponíveis? por gentileza? brigado
-      - Quais bebidas vocês têm? por gentileza? obrigada
-      - bom dia Quais bebidas vocês têm disponíveis? por favor? valeu
-      - boa tarde Quais bebidas vocês têm? ? valeu
-      - boa noite Quais bebidas vocês tem? pf? obrigada
-      - bom dia Quais bebidas vocês têm disponíveis? por favor? brigada
-      - boa tarde Quais bebidas vocês tem disponíveis? por gentileza? agradeço
-      - Quais bebidas vocês tem disponíveis? ? brigado
-      - ola Quais bebidas vocês tem disponíveis? por favor? obrigado
-      - bom dia Quais bebidas vocês têm? por gentileza?
-      - hey Quais bebidas vocês têm disponíveis? por gentileza? brigada
-      - hey Quais bebidas vocês têm? por gentileza? agradeço
-      - bom dia Quais bebidas vocês têm disponíveis? por favor? obrigado
-      - oi Quais bebidas vocês tem? pf? agradeço
-      - olá Quais bebidas vocês tem? por gentileza? obg
-      - Quais bebidas vocês têm disponíveis? por gentileza? valeu
-      - bom dia Quais bebidas vocês têm? ? obg
-      - hey Quais bebidas vocês têm? ? brigado
-      - oi Quais bebidas vocês têm disponíveis? por gentileza? obrigado
-      - Quais bebidas vocês têm? ? vlw
-      - ola Quais bebidas vocês tem disponíveis? por favor? brigado
-      - ola Quais bebidas vocês tem? por favor? agradeço
-      - oi Quais bebidas vocês tem disponíveis? por gentileza? vlw
-      - oi Quais bebidas vocês tem? por favor? obrigada
-      - boa noite Quais bebidas vocês tem disponíveis? por favor? obrigada
-      - hey Quais bebidas vocês tem disponíveis? ? brigada
-      - bom dia Quais bebidas vocês tem? ? obg
-      - oi Quais bebidas vocês tem disponíveis? pf? obrigada
-      - boa noite Quais bebidas vocês têm? por gentileza? obrigado
-      - bom dia Quais bebidas vocês têm disponíveis? pf? obrigada
-      - ola Quais bebidas vocês têm disponíveis? pf? obg
-      - oi Quais bebidas vocês têm? ? obrigado
-      - bom dia Quais bebidas vocês têm? por favor? obg
-      - Quais bebidas vocês têm disponíveis? por favor?
-      - boa noite Quais bebidas vocês têm? por favor? obg
-      - oi Quais bebidas vocês tem? ? obrigada
-      - boa tarde Quais bebidas vocês tem disponíveis? pf? brigada
-      - boa noite Quais bebidas vocês tem? pf? valeu
-      - hey Quais bebidas vocês têm disponíveis? pf? obrigado
-      - boa noite Quais bebidas vocês têm disponíveis? por gentileza?
-      - Quais bebidas vocês têm disponíveis? pf? obg
-      - ola Quais bebidas vocês têm? por favor? obrigada
-      - boa tarde Quais bebidas vocês tem? pf?
-      - boa noite Quais bebidas vocês tem? pf?
-      - boa tarde Quais bebidas vocês têm? pf? brigado
-      - boa tarde Quais bebidas vocês tem? ? obrigado
-      - Quais bebidas vocês têm disponíveis? por favor? obrigada
-      - boa noite Quais bebidas vocês tem disponíveis? por favor? obrigado
-      - ola Quais bebidas vocês têm disponíveis? por gentileza? brigada
-      - Quais bebidas vocês têm disponíveis? por gentileza?
-      - oi Quais bebidas vocês tem disponíveis? pf? agradeço
-      - olá Quais bebidas vocês tem disponíveis? ? brigada
-      - boa noite Quais bebidas vocês têm? ? vlw
-      - bom dia Quais bebidas vocês tem disponíveis? por favor? brigada
-      - ola Quais bebidas vocês tem? por gentileza? vlw
-      - ola Quais bebidas vocês têm disponíveis? por favor? agradeço
-      - ola Quais bebidas vocês tem? por gentileza? brigado
-      - bom dia Quais bebidas vocês tem disponíveis? por gentileza? obrigada
-      - boa tarde Quais bebidas vocês têm? ?
-      - oi Quais bebidas vocês têm? por gentileza? brigada
-      - boa tarde Quais bebidas vocês tem disponíveis? por favor? vlw
-      - boa noite Quais bebidas vocês tem? por favor? obrigada
-      - bom dia Quais bebidas vocês têm disponíveis? pf? obg
-  - intent: ask_menu
-    examples: |
-      - ask menu
-  - intent: negate
-    examples: |
-      - não
-      - nao
-      - incorreto
-  - intent: affirm
-    examples: |
-      - sim
-      - s
-      - isso
-      - isso mesmo
-      - certinho
-      - certo
-      - ok
-      - beleza
-      - tudo certo
-      - joia
-  - intent: greet
-    examples: |
-      - olá
-      - bom dia
-      - boa tarde
-      - boa noite
-  - intent: thanks
-    examples: |
-      - obrigado
-      - brigado
-      - obrigada
-      - brigada
-      - agradeço
-      - obg
-  - intent: goodbye
-    examples: |
-      - até mais
-      - até
-      - até logo
-      - ate
-      - ate mais
-      - ate logo
-  - intent: mood_great
-    examples: |
-      - gostei muito
-      - amei
-      - gostei
-      - bom
-      - excelente
-  - intent: mood_unhappy
-    examples: |
-      - não gostei
-      - achei ruim
-      - mais ou menos
-      - bem mais ou menos
+- intent: order_pizza
+  examples: |
+    - boa tarde Vou querer uma pizza de [bacon](pizza) com um [pepsi](drink) . agradeço
+    - olá Queria uma pizza de [bacon](pizza) com um [guaraná jesus](drink) pf. valeu
+    - hey Quero uma pizza de [bacon](pizza) e uma [guaraná jesus](drink) por favor. brigado
+    - Queria uma pizza de [bacon](pizza) e [guaraná jesus](drink) por favor. obrigado
+    - olá Vou pedir uma pizza de [bacon](pizza) e um [guaraná](drink) por favor. valeu
+    - boa noite Queria uma pizza de [peperoni](pizza) e [pepsi](drink) . agradeço
+    - hey Vou querer uma pizza de [portuguesa](pizza) e [pepsi](drink) .
+    - ola Queria uma pizza de [frango com catupiry](pizza) pf. vlw
+    - oi Vou pedir uma pizza de [peperoni](pizza) com [guaraná jesus](drink) . obrigado
+    - Quero uma pizza de [quatro-queijos](pizza) por favor. obrigado
+    - boa noite Queria uma pizza de [frango com catupiry](pizza) com um [guaraná jesus](drink) por gentileza.
+    - oi Gostaria de uma pizza de [bacon](pizza) com [pepsi](drink) por gentileza. vlw
+    - boa tarde Quero uma pizza de [muçarela](pizza) e um [suco de laranja](drink) . obrigada
+    - oi Gostaria de uma pizza de [frango com catupiry](pizza) e um [guaraná jesus](drink) por gentileza. agradeço
+    - boa tarde Gostaria de uma pizza de [portuguesa](pizza) e uma [guaraná jesus](drink) pf. obg
+    - oi Quero uma pizza de [quatro-queijos](pizza) e um [guaraná jesus](drink) . agradeço
+    - olá Vou querer uma pizza de [frango com catupiry](pizza) com uma [suco de laranja](drink) por gentileza. vlw
+    - bom dia Vou querer uma pizza de [portuguesa](pizza) e [pepsi](drink) por gentileza. brigada
+    - olá Vou querer uma pizza de [frango com catupiry](pizza) e [guaraná](drink) por favor. valeu
+    - ola Vou querer uma pizza de [lombo](pizza) e [coca-cola](drink) . obrigado
+    - olá Quero uma pizza de [marguerita](pizza) com [suco de laranja](drink) por gentileza.
+    - boa noite Vou pedir uma pizza de [marguerita](pizza) com [guaraná](drink) .
+    - olá Quero uma pizza de [peperoni](pizza) com uma [guaraná jesus](drink) por favor. brigado
+    - Vou querer uma pizza de [bacon](pizza) e [pepsi](drink) por gentileza. obrigada
+    - bom dia Vou querer uma pizza de [marguerita](pizza) com [guaraná](drink) por gentileza. valeu
+    - ola Vou pedir uma pizza de [muçarela](pizza) e [suco de laranja](drink) . brigada
+    - oi Vou pedir uma pizza de [peperoni](pizza) com uma [guaraná jesus](drink) pf. obrigada
+    - bom dia Vou pedir uma pizza de [portuguesa](pizza) com [coca-cola](drink) por gentileza. obrigada
+    - boa noite Vou querer uma pizza de [frango com catupiry](pizza) com um [guaraná jesus](drink) por gentileza. valeu
+    - bom dia Quero uma pizza de [bacon](pizza) com uma [guaraná jesus](drink) pf. valeu
+    - bom dia Queria uma pizza de [marguerita](pizza) e [guaraná](drink) pf. agradeço
+    - oi Vou querer uma pizza de [portuguesa](pizza) e uma [suco de laranja](drink) por favor. obg
+    - ola Vou pedir uma pizza de [muçarela](pizza) com uma [pepsi](drink) . obrigada
+    - olá Queria uma pizza de [bacon](pizza) e um [guaraná](drink) . obrigado
+    - boa tarde Gostaria de uma pizza de [portuguesa](pizza) e um [guaraná](drink) por gentileza. brigada
+    - boa tarde Vou querer uma pizza de [muçarela](pizza) com um [suco de laranja](drink) por gentileza. vlw
+    - Queria uma pizza de [muçarela](pizza) com um [suco de laranja](drink) . brigada
+    - Vou querer uma pizza de [bacon](pizza) com um [coca-cola](drink) por gentileza. obg
+    - Vou pedir uma pizza de [bacon](pizza) e um [guaraná](drink) pf. obg
+    - boa tarde Queria uma pizza de [marguerita](pizza) e uma [coca-cola](drink) por gentileza. obrigada
+    - ola Quero uma pizza de [peperoni](pizza) e um [guaraná jesus](drink) . vlw
+    - boa tarde Gostaria de uma pizza de [peperoni](pizza) e [guaraná](drink) por favor. obrigado
+    - boa tarde Quero uma pizza de [peperoni](pizza) e uma [suco de laranja](drink) . valeu
+    - oi Vou pedir uma pizza de [frango com catupiry](pizza) e uma [coca-cola](drink) por favor. brigada
+    - hey Vou pedir uma pizza de [portuguesa](pizza) com [pepsi](drink) pf. brigado
+    - boa tarde Gostaria de uma pizza de [portuguesa](pizza) e uma [pepsi](drink) pf. agradeço
+    - boa noite Vou pedir uma pizza de [bacon](pizza) e [coca-cola](drink) pf. obrigada
+    - ola Quero uma pizza de [frango com catupiry](pizza) com um [suco de laranja](drink) pf. obg
+    - Queria uma pizza de [frango com catupiry](pizza) e um [pepsi](drink) . brigada
+    - olá Queria uma pizza de [muçarela](pizza) com uma [coca-cola](drink) por gentileza.
+    - boa noite Gostaria de uma pizza de [portuguesa](pizza) e um [coca-cola](drink) por favor. brigado
+    - boa noite Gostaria de uma pizza de [marguerita](pizza) e uma [guaraná jesus](drink) por favor. obg
+    - ola Gostaria de uma pizza de [portuguesa](pizza) e um [guaraná jesus](drink) pf. obg
+    - olá Quero uma pizza de [bacon](pizza) e um [pepsi](drink) por gentileza.
+    - olá Gostaria de uma pizza de [quatro-queijos](pizza) com uma [guaraná jesus](drink) . valeu
+    - hey Queria uma pizza de [muçarela](pizza) com [suco de laranja](drink) por favor. obg
+    - hey Gostaria de uma pizza de [peperoni](pizza) e [guaraná jesus](drink) . vlw
+    - ola Queria uma pizza de [quatro-queijos](pizza) e uma [guaraná jesus](drink) . obrigada
+    - ola Vou querer uma pizza de [bacon](pizza) com um [suco de laranja](drink) pf. agradeço
+    - olá Queria uma pizza de [frango com catupiry](pizza) e uma [guaraná](drink) por gentileza. agradeço
+    - olá Vou querer uma pizza de [peperoni](pizza) com uma [guaraná jesus](drink) . agradeço
+    - oi Vou querer uma pizza de [lombo](pizza) com uma [guaraná](drink) por favor. obrigado
+    - ola Quero uma pizza de [quatro-queijos](pizza) e uma [coca-cola](drink) por gentileza. agradeço
+    - hey Queria uma pizza de [quatro-queijos](pizza) com uma [coca-cola](drink) pf. brigado
+    - boa tarde Vou pedir uma pizza de [peperoni](pizza) e uma [pepsi](drink) por gentileza. vlw
+    - olá Queria uma pizza de [marguerita](pizza) com um [guaraná jesus](drink) por gentileza. obrigado
+    - hey Vou pedir uma pizza de [peperoni](pizza) e um [guaraná jesus](drink) por gentileza. obrigada
+    - Vou querer uma pizza de [lombo](pizza) com [pepsi](drink) por gentileza. valeu
+    - ola Vou pedir uma pizza de [bacon](pizza) com uma [suco de laranja](drink) pf. valeu
+    - Queria uma pizza de [quatro-queijos](pizza) com [guaraná jesus](drink) pf. vlw
+    - Quero uma pizza [quatro-queijos](pizza).
+    - Vou querer uma pizza [marguerita](pizza) e uma [coca-cola](drink)
+    - Boa noite. Quero uma pizza de [muçarela](pizza) e um [guaraná jesus](drink).
+    - Uma pizza de [peperoni](pizza) e um [suco de laranja](drink)
+- intent: ask_pizza
+  examples: |
+    - olá Quais tipos de pizza vocês têm? por favor? brigado
+    - ola Quais pizzas vocês tem? por gentileza? valeu
+    - olá Quais sabores de pizza vocês têm? pf? valeu
+    - ola Quais os tipos de pizza disponíveis? pf? brigada
+    - ola Quais sabores de pizza vocês tem? por favor? agradeço
+    - oi Quais sabores de pizza vocês tem? por gentileza? valeu
+    - bom dia Quais sabores de pizza vocês tem? por gentileza? brigado
+    - ola Quais tipos de pizza vocês têm? por gentileza? brigada
+    - boa noite Quais tipos de pizza vocês têm? por gentileza? valeu
+    - hey Quais sabores de pizza vocês tem? pf? vlw
+    - boa noite Quais as opções por gentileza? valeu
+    - oi Quais as opções pf? brigado
+    - boa tarde Quais pizzas vocês tem? pf? vlw
+    - bom dia Quais pizzas vocês têm? pf? obrigado
+    - Quais sabores de pizza vocês tem? ? valeu
+    - olá Quais tipos de pizza vocês tem? por gentileza? obrigada
+    - ola Quais pizzas vocês têm? ? obrigada
+    - ola Quais sabores de pizza vocês tem? ? vlw
+    - boa noite Quais tipos de pizza vocês tem? por gentileza? agradeço
+    - oi Quais sabores de pizza vocês têm? por favor? vlw
+    - hey Quais pizzas vocês tem? pf? obg
+    - ola Quais pizzas vocês tem? ? obg
+    - olá Quais sabores de pizza vocês têm? pf? agradeço
+    - bom dia Quais tipos de pizza vocês tem? pf? obrigada
+    - boa tarde Quais sabores de pizza vocês têm? por gentileza? obrigada
+    - hey Quais os tipos de pizza disponíveis? por favor? obrigada
+    - boa tarde Quais sabores de pizza vocês tem? por gentileza?
+    - bom dia Quais tipos de pizza vocês tem? por favor? obrigada
+    - boa tarde Quais tipos de pizza vocês têm? pf?
+    - ola Quais pizzas vocês têm? pf? valeu
+    - boa noite Quais sabores de pizza vocês têm? pf?
+    - hey Quais pizzas vocês tem? pf?
+    - olá Quais as opções ? brigado
+    - oi Quais sabores de pizza vocês têm? pf?
+    - bom dia Quais os tipos de pizza disponíveis? por favor? obg
+    - ola Quais tipos de pizza vocês têm? ? brigado
+    - olá Quais tipos de pizza vocês têm? pf? vlw
+    - ola Quais sabores de pizza vocês têm? ? brigado
+    - bom dia Quais tipos de pizza vocês tem? ?
+    - hey Quais as opções por favor? obrigado
+    - bom dia Quais sabores de pizza vocês têm? pf? valeu
+    - bom dia Quais pizzas vocês têm? por favor? obg
+    - olá Quais sabores de pizza vocês tem? por favor? agradeço
+    - olá Quais tipos de pizza vocês têm? ?
+    - boa tarde Quais pizzas vocês tem? ? obrigado
+    - hey Quais sabores de pizza vocês tem? por favor? vlw
+    - ola Quais tipos de pizza vocês tem? por favor? obrigado
+    - ola Quais as opções pf? obrigado
+    - Quais pizzas vocês tem? ? agradeço
+    - oi Quais as opções por gentileza? valeu
+    - boa tarde Quais tipos de pizza vocês tem? pf? valeu
+    - ola Quais tipos de pizza vocês tem? por favor? obg
+    - hey Quais sabores de pizza vocês têm? pf? brigada
+    - olá Quais sabores de pizza vocês têm? por gentileza? brigada
+    - boa noite Quais tipos de pizza vocês tem? ? brigado
+    - boa tarde Quais tipos de pizza vocês tem? pf? brigada
+    - hey Quais tipos de pizza vocês tem? por gentileza? agradeço
+    - olá Quais tipos de pizza vocês têm? pf? obg
+    - oi Quais as opções por gentileza? obrigado
+    - hey Quais pizzas vocês tem? ? brigado
+    - olá Quais pizzas vocês tem? ? brigada
+    - hey Quais tipos de pizza vocês têm? por gentileza? agradeço
+    - ola Quais pizzas vocês tem? por favor? obrigada
+    - Quais pizzas vocês tem? por favor? brigado
+    - ola Quais sabores de pizza vocês tem? por favor? brigada
+    - oi Quais sabores de pizza vocês tem? ? brigada
+    - boa noite Quais tipos de pizza vocês têm? por favor? obg
+    - Quais os tipos de pizza disponíveis? ? obrigada
+    - bom dia Quais sabores de pizza vocês têm? por gentileza? agradeço
+    - boa tarde Quais tipos de pizza vocês têm? ? obg
+- intent: ask_drink
+  examples: |
+    - boa tarde Quais bebidas vocês tem disponíveis? por gentileza? obg
+    - bom dia Quais bebidas vocês tem disponíveis? por favor? obrigado
+    - Quais bebidas vocês tem? pf? obrigada
+    - boa tarde Quais bebidas vocês tem? por gentileza? agradeço
+    - Quais bebidas vocês tem? ? brigada
+    - oi Quais bebidas vocês têm? ? valeu
+    - Quais bebidas vocês têm? ? brigada
+    - bom dia Quais bebidas vocês tem disponíveis? por gentileza? brigado
+    - Quais bebidas vocês têm? por gentileza? obrigada
+    - bom dia Quais bebidas vocês têm disponíveis? por favor? valeu
+    - boa tarde Quais bebidas vocês têm? ? valeu
+    - boa noite Quais bebidas vocês tem? pf? obrigada
+    - bom dia Quais bebidas vocês têm disponíveis? por favor? brigada
+    - boa tarde Quais bebidas vocês tem disponíveis? por gentileza? agradeço
+    - Quais bebidas vocês tem disponíveis? ? brigado
+    - ola Quais bebidas vocês tem disponíveis? por favor? obrigado
+    - bom dia Quais bebidas vocês têm? por gentileza?
+    - hey Quais bebidas vocês têm disponíveis? por gentileza? brigada
+    - hey Quais bebidas vocês têm? por gentileza? agradeço
+    - bom dia Quais bebidas vocês têm disponíveis? por favor? obrigado
+    - oi Quais bebidas vocês tem? pf? agradeço
+    - olá Quais bebidas vocês tem? por gentileza? obg
+    - Quais bebidas vocês têm disponíveis? por gentileza? valeu
+    - bom dia Quais bebidas vocês têm? ? obg
+    - hey Quais bebidas vocês têm? ? brigado
+    - oi Quais bebidas vocês têm disponíveis? por gentileza? obrigado
+    - Quais bebidas vocês têm? ? vlw
+    - ola Quais bebidas vocês tem disponíveis? por favor? brigado
+    - ola Quais bebidas vocês tem? por favor? agradeço
+    - oi Quais bebidas vocês tem disponíveis? por gentileza? vlw
+    - oi Quais bebidas vocês tem? por favor? obrigada
+    - boa noite Quais bebidas vocês tem disponíveis? por favor? obrigada
+    - hey Quais bebidas vocês tem disponíveis? ? brigada
+    - bom dia Quais bebidas vocês tem? ? obg
+    - oi Quais bebidas vocês tem disponíveis? pf? obrigada
+    - boa noite Quais bebidas vocês têm? por gentileza? obrigado
+    - bom dia Quais bebidas vocês têm disponíveis? pf? obrigada
+    - ola Quais bebidas vocês têm disponíveis? pf? obg
+    - oi Quais bebidas vocês têm? ? obrigado
+    - bom dia Quais bebidas vocês têm? por favor? obg
+    - Quais bebidas vocês têm disponíveis? por favor?
+    - boa noite Quais bebidas vocês têm? por favor? obg
+    - oi Quais bebidas vocês tem? ? obrigada
+    - boa tarde Quais bebidas vocês tem disponíveis? pf? brigada
+    - boa noite Quais bebidas vocês tem? pf? valeu
+    - hey Quais bebidas vocês têm disponíveis? pf? obrigado
+    - boa noite Quais bebidas vocês têm disponíveis? por gentileza?
+    - Quais bebidas vocês têm disponíveis? pf? obg
+    - ola Quais bebidas vocês têm? por favor? obrigada
+    - boa tarde Quais bebidas vocês tem? pf?
+    - boa noite Quais bebidas vocês tem? pf?
+    - boa tarde Quais bebidas vocês têm? pf? brigado
+    - boa tarde Quais bebidas vocês tem? ? obrigado
+    - Quais bebidas vocês têm disponíveis? por favor? obrigada
+    - boa noite Quais bebidas vocês tem disponíveis? por favor? obrigado
+    - ola Quais bebidas vocês têm disponíveis? por gentileza? brigada
+    - Quais bebidas vocês têm disponíveis? por gentileza?
+    - oi Quais bebidas vocês tem disponíveis? pf? agradeço
+    - olá Quais bebidas vocês tem disponíveis? ? brigada
+    - boa noite Quais bebidas vocês têm? ? vlw
+    - bom dia Quais bebidas vocês tem disponíveis? por favor? brigada
+    - ola Quais bebidas vocês tem? por gentileza? vlw
+    - ola Quais bebidas vocês têm disponíveis? por favor? agradeço
+    - ola Quais bebidas vocês tem? por gentileza? brigado
+    - bom dia Quais bebidas vocês tem disponíveis? por gentileza? obrigada
+    - boa tarde Quais bebidas vocês têm? ?
+    - oi Quais bebidas vocês têm? por gentileza? brigada
+    - boa tarde Quais bebidas vocês tem disponíveis? por favor? vlw
+    - boa noite Quais bebidas vocês tem? por favor? obrigada
+    - bom dia Quais bebidas vocês têm disponíveis? pf? obg
+- intent: ask_menu
+  examples: |
+    - O que vocês tem?
+    - Quais as opções?
+    - Quais as opções disponíveis?
+    - Qual é o cardápio?
+- intent: negate
+  examples: |
+    - não
+    - nao
+    - incorreto
+- intent: affirm
+  examples: |
+    - sim
+    - s
+    - isso
+    - isso mesmo
+    - certinho
+    - certo
+    - ok
+    - beleza
+    - tudo certo
+    - joia
+- intent: greet
+  examples: |
+    - olá
+    - bom dia
+    - boa tarde
+    - boa noite
+- intent: thanks
+  examples: |
+    - obrigado
+    - brigado
+    - obrigada
+    - brigada
+    - agradeço
+    - obg
+- intent: goodbye
+  examples: |
+    - até mais
+    - até
+    - até logo
+    - ate
+    - ate mais
+    - ate logo
+- intent: mood_great
+  examples: |
+    - gostei muito
+    - amei
+    - gostei
+    - bom
+    - excelente
+- intent: mood_unhappy
+  examples: |
+    - não gostei
+    - achei ruim
+    - mais ou menos
+    - bem mais ou menos
