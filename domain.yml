@@ -12,8 +12,8 @@ intents:
 - order_pizza
 - thanks
 entities:
-- pizza
 - drink
+- pizza
 slots:
   pizza:
     type: text

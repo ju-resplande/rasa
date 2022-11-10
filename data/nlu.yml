@@ -76,6 +76,8 @@ nlu:
     - Vou querer uma pizza [marguerita](pizza) e uma [coca-cola](drink)
     - Boa noite. Quero uma pizza de [muçarela](pizza) e um [guaraná jesus](drink).
     - Uma pizza de [peperoni](pizza) e um [suco de laranja](drink)
+    - Quero uma pizza de [frango com catupiry](pizza) e um [suco de laranja](drink)
+    - QUero uam pizza de [frango com catupity](pizza) e um [suco de laranja](drink)
 - intent: ask_pizza
   examples: |
     - olá Quais tipos de pizza vocês têm? por favor? brigado
@@ -249,6 +251,7 @@ nlu:
     - bom dia
     - boa tarde
     - boa noite
+    - oi
 - intent: thanks
   examples: |
     - obrigado

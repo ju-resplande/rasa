@@ -94,3 +94,25 @@ stories:
           - pizza: peperoni
           - drink: suco de laranja
       - action: action_show_total
+  - story: interactive_story_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_list_menu
+      - action: utter_ask_order
+      - intent: order_pizza
+        entities:
+          - pizza: frango com catupiry
+          - drink: suco de laranja
+      - action: action_show_total
+  - story: interactive_story_6
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_list_menu
+      - action: utter_ask_order
+      - intent: order_pizza
+        entities:
+          - pizza: frango com catupity
+          - drink: suco de laranja
+      - action: action_show_total
