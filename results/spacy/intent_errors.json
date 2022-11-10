@@ -1,50 +1,58 @@
 [
   {
-    "text": "olá",
-    "intent": "greet",
+    "text": "boa noite Quais as opções por gentileza? valeu",
+    "intent": "ask_pizza",
     "intent_prediction": {
-      "name": "mood_great",
-      "confidence": 0.2891903221607208
+      "name": "ask_menu",
+      "confidence": 0.3100389540195465
     }
   },
   {
-    "text": "obg",
-    "intent": "thanks",
+    "text": "O que vocês tem?",
+    "intent": "ask_menu",
     "intent_prediction": {
-      "name": "mood_great",
-      "confidence": 0.35510143637657166
+      "name": "ask_drink",
+      "confidence": 0.5992611646652222
     }
   },
   {
-    "text": "não gostei",
-    "intent": "mood_unhappy",
+    "text": "Quais as opções?",
+    "intent": "ask_menu",
     "intent_prediction": {
-      "name": "negate",
-      "confidence": 0.45647671818733215
+      "name": "ask_pizza",
+      "confidence": 0.4102635979652405
     }
   },
   {
-    "text": "achei ruim",
-    "intent": "mood_unhappy",
+    "text": "Quais as opções disponíveis?",
+    "intent": "ask_menu",
     "intent_prediction": {
-      "name": "negate",
-      "confidence": 0.36858686804771423
+      "name": "ask_drink",
+      "confidence": 0.7790648937225342
     }
   },
   {
-    "text": "mais ou menos",
-    "intent": "mood_unhappy",
+    "text": "não",
+    "intent": "negate",
     "intent_prediction": {
-      "name": "mood_great",
-      "confidence": 0.2860657572746277
+      "name": "mood_unhappy",
+      "confidence": 0.5786051750183105
     }
   },
   {
-    "text": "bem mais ou menos",
-    "intent": "mood_unhappy",
+    "text": "nao",
+    "intent": "negate",
     "intent_prediction": {
-      "name": "negate",
-      "confidence": 0.2557923197746277
+      "name": "affirm",
+      "confidence": 0.23051457107067108
+    }
+  },
+  {
+    "text": "bom",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.3422080874443054
     }
   }
 ]

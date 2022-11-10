@@ -53,7 +53,7 @@ stories:
           - pizza: quatro-queijos
       - action: action_show_total
 
-  - story: interactive_story_1
+  - story: interactive_story_2
     steps:
       - intent: greet
       - action: utter_greet
@@ -67,4 +67,30 @@ stories:
           - pizza: marguerita
       - slot_was_set:
           - drink: coca-cola
+      - action: action_show_total
+  - story: interactive_story_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_list_menu
+      - action: utter_ask_order
+      - intent: order_pizza
+        entities:
+          - pizza: muçarela
+          - drink: guaraná jesus
+      - slot_was_set:
+          - pizza: muçarela
+      - slot_was_set:
+          - drink: guaraná jesus
+      - action: action_show_total
+  - story: interactive_story_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_list_menu
+      - action: utter_ask_order
+      - intent: order_pizza
+        entities:
+          - pizza: peperoni
+          - drink: suco de laranja
       - action: action_show_total

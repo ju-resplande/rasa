@@ -1,16 +1,4 @@
 {
-  "ask_drink": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4
-  },
-  "action_list_drink": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4
-  },
   "mood_unhappy": {
     "precision": 1.0,
     "recall": 1.0,
@@ -22,6 +10,24 @@
     "recall": 0.6666666666666666,
     "f1-score": 0.6666666666666666,
     "support": 3
+  },
+  "action_listen": {
+    "precision": 0.9166666666666666,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.9166666666666666,
+    "support": 12
+  },
+  "action_list_drink": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "action_list_pizza": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
   },
   "order_pizza": {
     "precision": 1.0,
@@ -35,13 +41,7 @@
     "f1-score": 1.0,
     "support": 4
   },
-  "action_listen": {
-    "precision": 0.9166666666666666,
-    "recall": 0.9166666666666666,
-    "f1-score": 0.9166666666666666,
-    "support": 12
-  },
-  "action_list_pizza": {
+  "ask_drink": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
