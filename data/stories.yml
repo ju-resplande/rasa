@@ -39,3 +39,32 @@ stories:
       - intent: order_pizza
       - action: action_show_total
       - intent: mood_unhappy
+
+  - story: interactive_story_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_list_menu
+      - action: utter_ask_order
+      - intent: order_pizza
+        entities:
+          - pizza: quatro-queijos
+      - slot_was_set:
+          - pizza: quatro-queijos
+      - action: action_show_total
+
+  - story: interactive_story_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_list_menu
+      - action: utter_ask_order
+      - intent: order_pizza
+        entities:
+          - pizza: marguerita
+          - drink: coca-cola
+      - slot_was_set:
+          - pizza: marguerita
+      - slot_was_set:
+          - drink: coca-cola
+      - action: action_show_total
