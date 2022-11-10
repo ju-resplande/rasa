@@ -11,7 +11,7 @@ import ./common.chatito
     ~[hi?] ~[ask_drink] ~[please?]? ~[thanks?]
 
 %[ask_menu]('training': '70', 'testing': '30')
-    ~[ask menu]
+    ~[ask_menu]
 
 %[negate]('training': '70', 'testing': '30')
     ~[negate]
