@@ -9,11 +9,13 @@ intents:
 - mood_great
 - mood_unhappy
 - negate
+- nlu_fallback
 - order_pizza
+- request_pizza
 - thanks
 entities:
-- drink
 - pizza
+- drink
 slots:
   pizza:
     type: text
@@ -44,3 +46,8 @@ actions:
 - action_show_total
 - utter_ask_order
 - utter_greet
+forms:
+  pizza_form:
+    required_slots:
+    - pizza
+    - drink

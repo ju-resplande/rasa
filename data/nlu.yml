@@ -78,6 +78,8 @@ nlu:
     - Uma pizza de [peperoni](pizza) e um [suco de laranja](drink)
     - Quero uma pizza de [frango com catupiry](pizza) e um [suco de laranja](drink)
     - QUero uam pizza de [frango com catupity](pizza) e um [suco de laranja](drink)
+    - pizza [quatro-queijos](pizza)
+    - [coca-cola](drink)
 - intent: ask_pizza
   examples: |
     - olá Quais tipos de pizza vocês têm? por favor? brigado
@@ -228,6 +230,15 @@ nlu:
     - Quais as opções?
     - Quais as opções disponíveis?
     - Qual é o cardápio?
+    - qual é o menu?
+    - Qual o cardápio?
+- intent: request_pizza
+  examples: |
+    - Quero fazer um pedido
+    - Quero pedir algo
+    - Quero fazer o pedido
+    - Quero pedir
+    - quero fazer um pedido
 - intent: negate
   examples: |
     - não
@@ -281,3 +292,6 @@ nlu:
     - achei ruim
     - mais ou menos
     - bem mais ou menos
+- intent: nlu_fallback
+  examples: |
+    - Qual o total?

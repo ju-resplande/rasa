@@ -33,3 +33,22 @@ rules:
     steps:
       - intent: order_pizza
       - action: action_show_total
+
+  - rule: Activate form
+    steps:
+      - intent: request_pizza
+      - action: pizza_form
+      - active_loop: pizza_form
+
+  - rule: Submit form
+    condition:
+      #Condition that form is active.
+      - active_loop: pizza_form
+    steps:
+      #Form is deactivated
+      - action: pizza_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      # The actions we want to run when the form is submitted.
+      - action: action_show_total

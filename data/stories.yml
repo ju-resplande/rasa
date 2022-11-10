@@ -116,3 +116,20 @@ stories:
           - pizza: frango com catupity
           - drink: suco de laranja
       - action: action_show_total
+  - story: interactive_story_7
+    steps:
+      - intent: request_pizza
+      - action: pizza_form
+      - active_loop: pizza_form
+      - slot_was_set:
+          - requested_slot: pizza
+      - slot_was_set:
+          - pizza: quatro-queijos
+      - slot_was_set:
+          - requested_slot: drink
+      - slot_was_set:
+          - drink: coca-cola
+      - slot_was_set:
+          - requested_slot: null
+      - active_loop: null
+      - action: action_show_total
