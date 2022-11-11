@@ -79,6 +79,13 @@ class ActionShowTotal(Action):
             if not item:
                 continue
 
+            if item in ["laranja", "limão"]:
+                item = "suco de " + item
+            elif item == "catupiry":
+                item = "frango com catupiry"
+            elif item == "suco":
+                item = "suco de limão"
+
             item = item.lower()
 
             value = PRICE_TABLES.get(item, 15)

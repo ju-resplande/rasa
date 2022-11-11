@@ -31,7 +31,6 @@ PRICE_TABLES = {
     "muçarela": 20,
     "frango com catupiry": 23,
     "brigadeiro": 25,
-    "banana com canela": 23,
     "coca-cola": 6,
     "guaraná": 6,
     "guaraná jesus": 6,
