@@ -80,6 +80,10 @@ nlu:
     - QUero uam pizza de [frango com catupity](pizza) e um [suco de laranja](drink)
     - pizza [quatro-queijos](pizza)
     - [coca-cola](drink)
+    - quero uma pizza [quatro-queijos](pizza) e uma [limonada](drink)
+    - oi. quero uma pizza [quatro-queijos](pizza)
+    - pizza [quatro-queijos](pizza)
+    - [limonada](suco de limão)
 - intent: ask_pizza
   examples: |
     - olá Quais tipos de pizza vocês têm? por favor? brigado
@@ -295,3 +299,9 @@ nlu:
 - intent: nlu_fallback
   examples: |
     - Qual o total?
+- synonym: suco de limão
+  examples: |
+    - limonada
+- synonym: quatro-queijos
+  examples: |
+    - quatro queijos

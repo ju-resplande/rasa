@@ -133,3 +133,48 @@ stories:
           - requested_slot: null
       - active_loop: null
       - action: action_show_total
+  - story: interactive_story_8
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_list_menu
+      - action: utter_ask_order
+      - intent: order_pizza
+        entities:
+          - pizza: quatro-queijos
+          - drink: limonada
+      - action: action_show_total
+  - story: interactive_story_9
+    steps:
+      - intent: order_pizza
+        entities:
+          - pizza: quatro-queijos
+      - slot_was_set:
+          - pizza: quatro-queijos
+      - action: action_show_total
+  - story: interactive_story_10
+    steps:
+      - intent: order_pizza
+        entities:
+          - pizza: quatro-queijos
+          - drink: limonada
+      - action: action_show_total
+  - story: interactive_story_11
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_list_menu
+      - action: utter_ask_order
+      - intent: request_pizza
+      - action: pizza_form
+      - active_loop: pizza_form
+      - slot_was_set:
+          - requested_slot: pizza
+      - slot_was_set:
+          - pizza: quatro-queijos
+      - slot_was_set:
+          - requested_slot: drink
+      - intent: order_pizza
+        entities:
+          - drink: limonada
+      - action: action_show_total

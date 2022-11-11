@@ -15,6 +15,7 @@ intents:
 - thanks
 entities:
 - pizza
+- suco de limão
 - drink
 slots:
   pizza:
